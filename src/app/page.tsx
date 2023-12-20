@@ -1,18 +1,22 @@
-async function getAllPizza() {
-  'use server'
+// async function getAllPizza() {
+//   'use server'
 
-  try {
-    const response = await fetch('http://localhost:5246/', {})
-    const data = await response.json();
+//   try {
+//     const response = await fetch('http://localhost:5246/', {})
+//     const data = await response.json();
 
-    return data;
-  } catch (error) {
-    throw new Error("Error")
-  }
-}
+//     return data;
+//   } catch (error) {
+//     throw new Error("Error")
+//   }
+// }
 
 const Home = async () => {
-  const pizza = await getAllPizza();
+  // const pizza = await getAllPizza();
+
+  const pizza = {
+    message: "Coming soon"
+  }
 
   if (pizza) {
     console.log('pizza', pizza);
